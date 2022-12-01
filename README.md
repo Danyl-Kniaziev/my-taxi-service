@@ -4,24 +4,29 @@ A simple web-application for taxi-service that support authentication, registrat
 ## 💻 Technologies
 This app use:
 - ☕ Java v11;
-- javax.servlet.HttpSelvet v4;
-- javax.servlet.Filter;
-- MySql.
+- ServletApi;
+- JDBC;
+- Maven;
+- JSP;
+- html/css;
+- JSTL;
+- MySql;
+- Tomcat v9.
 ## 🎯 Features
 - registration like a driver;
 - authentication like a driver;
 - create/delete/remove a manufacturers, cars or drivers;
 - display list of all manufacturers, cars or drivers;
 - display list of all cars used by an authentication driver.
-## This project has a standard N-tier architecture, where:
+## 🪜 This project has a standard N-tier architecture, where:
 - classes in dao dir are responsible for working with our db;
 - classes in service are responsible for the execution of logic;
 - classes in controller dir handle HTTP requests;
 - AuthenticationFilter gives non-authenticated access only to /login or /drivers/ad;
 - webapp dir has jsp files and web.xml file which is configuration.
-## UML-diagram of database
+## 🔗 UML-diagram of database
 ![UML-diagram](src/main/resources/taxi_UML.png)
-## How to run
+## ▶️  How to run
 - To get the actual parameters of the database tables, run script from the [init_db.sql](src/main/resources/init_db.sql) file in the Workbench;
 - specify your current IP:Port of your MySql, USERNAME AND PASSWORD in the appropriate variables in [ConnectionUtil](src/main/java/taxi/util/ConnectionUtil.java);
 - For running use Servlet Container like Apache Tomcat.
